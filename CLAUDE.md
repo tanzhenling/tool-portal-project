@@ -31,7 +31,8 @@ A portal where visitors try out small web tools, focused on Electrical Engineeri
 ### Phases
 - **Phase 1 — portal plus first tool:** the homepage, the shared light/dark theme, and one tool: an Ohm's law calculator (enter any two of voltage, current, resistance; get the third).
   - [x] Portal homepage with a placeholder "Tool 1 — coming soon" card that opens and returns (done; neutral styling, visual design to be chosen later).
-  - [ ] Ohm's law calculator replaces the placeholder.
+  - [x] Ohm's law calculator replaces the placeholder (done; plain V, A, Ω units, no power result).
+  - Phase 1 is complete.
 - **Phase 2 — more tools:** add further Electrical Engineering tools, one at a time. To be defined after phase 1.
 
 ## Rules for Claude

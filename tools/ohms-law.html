@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ohm's law calculator · EE Tool Portal</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <script src="../js/theme.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <h1 class="site-title"><a href="../index.html">EE Tool Portal</a></h1>
+    <button id="theme-toggle" class="theme-toggle" type="button">Switch to dark theme</button>
+  </header>
+
+  <main>
+    <a class="back-link" href="../index.html">← Back to all tools</a>
+    <h2>Ohm's law calculator</h2>
+    <p class="intro">Fill in any two values and leave the third empty. The calculator finds the empty one using V = I × R.</p>
+
+    <form id="ohm-form" class="tool-form" novalidate>
+      <div class="field">
+        <label for="voltage">Voltage (V)</label>
+        <input id="voltage" name="voltage" type="number" step="any" inputmode="decimal" autocomplete="off">
+      </div>
+      <div class="field">
+        <label for="current">Current (A)</label>
+        <input id="current" name="current" type="number" step="any" inputmode="decimal" autocomplete="off">
+      </div>
+      <div class="field">
+        <label for="resistance">Resistance (Ω)</label>
+        <input id="resistance" name="resistance" type="number" step="any" inputmode="decimal" autocomplete="off">
+      </div>
+
+      <div class="actions">
+        <button type="submit" class="button primary">Calculate</button>
+        <button type="button" id="clear" class="button">Clear</button>
+      </div>
+    </form>
+
+    <p id="result" class="result" aria-live="polite"></p>
+  </main>
+
+  <script src="../js/ohms-law.js"></script>
+</body>
+</html>
