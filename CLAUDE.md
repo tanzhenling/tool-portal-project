@@ -7,6 +7,7 @@
 ## Project Structure
 The project is nearly empty for now. As it grows, keep things in these places:
 - `index.html` — the main page, at the top level.
+- `tools/` — one HTML page per tool.
 - `css/` — stylesheets.
 - `js/` — scripts.
 - `assets/` — images, fonts, and other static files.
