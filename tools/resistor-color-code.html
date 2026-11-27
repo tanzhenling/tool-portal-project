@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Resistor color code decoder · EE Tool Portal</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <script src="../js/theme.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <h1 class="site-title"><a href="../index.html">EE Tool Portal</a></h1>
+    <button id="theme-toggle" class="theme-toggle" type="button">Switch to dark theme</button>
+  </header>
+
+  <main>
+    <a class="back-link" href="../index.html">← Back to all tools</a>
+    <h2>Resistor color code decoder</h2>
+    <p class="intro">Pick the color of each band, reading from the end with the bands closest together. The resistance and tolerance update as you choose.</p>
+
+    <form id="color-form" class="tool-form" novalidate>
+      <fieldset class="band-count">
+        <legend>Number of bands</legend>
+        <label class="radio-label"><input type="radio" name="bands" value="4" checked> 4 bands</label>
+        <label class="radio-label"><input type="radio" name="bands" value="5"> 5 bands</label>
+      </fieldset>
+
+      <div class="field">
+        <label for="digit1" id="label-digit1"></label>
+        <select id="digit1"></select>
+      </div>
+      <div class="field">
+        <label for="digit2" id="label-digit2"></label>
+        <select id="digit2"></select>
+      </div>
+      <div class="field" id="field-digit3" hidden>
+        <label for="digit3" id="label-digit3"></label>
+        <select id="digit3"></select>
+      </div>
+      <div class="field">
+        <label for="multiplier" id="label-multiplier"></label>
+        <select id="multiplier"></select>
+      </div>
+      <div class="field">
+        <label for="tolerance" id="label-tolerance"></label>
+        <select id="tolerance"></select>
+      </div>
+    </form>
+
+    <p id="result" class="result" aria-live="polite"></p>
+  </main>
+
+  <script src="../js/resistor-color-code.js"></script>
+</body>
+</html>

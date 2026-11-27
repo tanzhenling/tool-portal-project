@@ -140,7 +140,25 @@ main {
   font-weight: 600;
 }
 
-.field input {
+.band-count {
+  margin: 0 0 1rem;
+  padding: 0;
+  border: 0;
+}
+
+.band-count legend {
+  padding: 0;
+  margin-bottom: 0.25rem;
+  font-weight: 600;
+}
+
+.radio-label {
+  display: inline-block;
+  margin-right: 1.25rem;
+}
+
+.field input,
+.field select {
   width: 100%;
   padding: 0.6rem 0.75rem;
   border: 1px solid var(--border);
@@ -171,6 +189,7 @@ main {
 }
 
 .result {
+  white-space: pre-line;
   min-height: 1.5rem;
   margin: 1.25rem 0 0;
   font-size: 1.15rem;

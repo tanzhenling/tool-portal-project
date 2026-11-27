@@ -33,7 +33,8 @@ A portal where visitors try out small web tools, focused on Electrical Engineeri
   - [x] Portal homepage with a placeholder "Tool 1 — coming soon" card that opens and returns (done; neutral styling, visual design to be chosen later).
   - [x] Ohm's law calculator replaces the placeholder (done; plain V, A, Ω units, no power result).
   - Phase 1 is complete.
-- **Phase 2 — more tools:** add further Electrical Engineering tools, one at a time. To be defined after phase 1.
+- **Phase 2 — more tools:** add further Electrical Engineering tools, one at a time. The list is still open.
+  - [x] Resistor color code decoder (done; 4- and 5-band, shows resistance and tolerance).
 
 ## Rules for Claude
 - Explain technical terms in plain language.
